@@ -1,0 +1,255 @@
+/* estilo padrão para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+
+body {
+  background: #F3F5FC;
+}
+
+
+main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 30px 40px;
+}
+
+
+code {
+  color: #0A3871;
+  background-color: #343A4022;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+
+.logo-divider {
+  margin-right: 3rem;
+}
+
+
+#entrada,
+#saida {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 90vh;
+  margin: 0 auto;
+}
+
+
+textarea {
+  width: 100%;
+  height: 100%;
+  background: none;
+  resize: none;
+  outline: none;
+  border: none;
+}
+
+
+#saida {
+  width: 400px;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  padding-bottom: 32px;
+  justify-content: center;
+}
+
+
+#entrada textarea {
+  margin-top: 80px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  color: #0A3871;
+}
+
+
+#entrada textarea::placeholder {
+  color: #0A3871;
+}
+
+
+#saida textarea {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #495057;
+  margin-top: 32px;
+  width: 85%;
+}
+
+
+#semMensagem {
+  display: flex;
+  flex-flow: column;
+  width: 336px;
+  
+}
+
+
+#semMensagem img {
+  width: 100%;
+  margin: 0 auto;
+  
+}
+
+/*o título dentro do  'semMensagem' */
+#semMensagem h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #343A40;
+  
+}
+
+/* parágrafo dentro do 'semMensagem' */
+#semMensagem p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #495057;
+}
+
+/* Estilos para  'informacao' */
+.informacao {
+  display: flex;
+  align-items: center;
+  line-height: 150%;
+  padding: 16px;
+}
+
+/* Estilos para <sub> */
+sub {
+  margin-left: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #000000;
+  opacity: 0.6;
+}
+
+/* Estilos para 'inputGroup' */
+.inputGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+/* Estilos para o botão  'type=button' */
+button[type=button] {
+  width: 328px;
+  height: 67px;
+  color: #0A3871;
+  border: 1px solid #051830;
+  background: none;
+  border-radius: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+/* Estilos para o botão  'type=button' quando desabilitado */
+button[type=button]:disabled {
+  color: #9a9da0;
+  border: 1px solid #6b92bb;
+  cursor: not-allowed;
+}
+
+/* Estilos para o botão quando passar o cursor sobre ele */
+button:hover {
+  cursor: pointer;
+  filter: opacity(80%);
+  background: #000000b6;
+}
+
+/* Estilos específicos  'criptografar' */
+button.criptografar {
+  color: #F3F5FC;
+  background: #0b0130;
+}
+
+/* Estilos para o botão 'copiar' */
+button#copiar {
+  width: 270px;
+}
+
+/* Estilos para o botão  'limpar' */
+button#limpar {
+  margin: 0 8px;
+  width: 65px;
+  border-radius: 20px;
+  line-height: 50%;
+}
+
+/* Estilos para o botão 'limpar' quando passar o cursor sobre ele */
+button#limpar:hover {
+  background-color: #00000050;
+}
+
+
+
+.description {
+  content: '';
+  display: none;
+  color: #fff;
+  background-color: #0A3871;
+  border-radius: 3px;
+  padding: 3px 5px;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+
+
+/* Estilos  com classe 'gitLink' */
+.gitLink {
+  color: #4990e6;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Estilos para o  'gitLink' quando passar o cursor sobre ele */
+.gitLink:hover {
+  color: #5f7dff;
+}
+
+/* Estilos para  'resetButton' */
+.resetButton {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: none;
+  border: none;
+  color: #14298a;
+  cursor: pointer;
+  font-weight: 700;
+  
+}
+
+/* Estilos para  'resetButton' quando passar o cursor sobre ele */
+.resetButton:hover {
+  color: #16c2b3;
+}
+
+
+
+

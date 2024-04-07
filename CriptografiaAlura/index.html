@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Configurações básicas do documento -->
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Configuração para melhor compatibilidade com navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuração para ajustar a escala em dispositivos móveis -->
+    
+    <!-- Estilos e título da página -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter"> 
+    <link rel="stylesheet" href="style.css"> 
+    <title>Decodificador de texto</title> <!-- Título da página -->
+    
+    <!-- Ícone da página -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+
+<body>
+    <!-- Conteúdo principal da página -->
+    <main>
+        <!-- Cabeçalho com logotipo e links sociais -->
+        <header class="logo-divider">
+            <img src="assets/Logo.svg" alt="Logo Alura" id="logo"> <!-- logotipo da Alura -->
+            <nav id="nav-link">
+                
+        </header>
+        
+        <!-- Seção de entrada de texto -->
+        <section id="entrada">
+            <textarea name="msgTxt" id="msgTxt" placeholder="Digite seu texto"></textarea> <!-- Área onde você digita o texto -->
+            <div class="informacao">
+                <img src="assets/bi_exclamation-circle-fill.svg" alt="informação"> <!-- Exibe o ícone de informação -->
+                <sub>Apenas letras minúsculas e sem acento.</sub> <!-- Mostra uma informação sobre o tipo de texto aceito -->
+                
+            </div>
+            <div class="inputGroup">
+                <button type="button" class="criptografar" onclick="criptografar()">Criptografar</button> <!-- Botão para criptografar o texto -->
+                <button type="button" id="descriptografar" onclick="descriptografar()" disabled="disabled">Descriptografar</button> <!-- Botão para descriptografar o texto (desabilitado por enquanto) -->
+            </div>
+        </section>
+        
+        <!-- Área de exibição do texto -->
+        <aside id="saida">
+            <div id="semMensagem">
+                <img src="assets/High quality products 1 1.svg" alt="Sem mensagem encontrada"> <!-- Exibe uma imagem indicando que nenhuma mensagem foi encontrada -->
+                <h2>Nenhuma mensagem encontrada</h2> <!-- Título informando que nenhuma mensagem foi encontrada -->
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p> <!-- Orientação para digitar um texto válido -->
+            </div>
+            <textarea name="criptoTxt" id="msgCriptografada" readonly></textarea> <!-- Área onde o texto criptografado será exibido (somente leitura) -->
+            <div class="inputGroup">
+                <button type="button" id="copiar" onclick="copiarTexto()">Copiar</button> <!-- Botão para copiar o texto criptografado -->
+               
+                </button>
+            </div>
+        </aside>
+    </main>
+    
+       
+    <script src="script.js"></script> 
+</body>
+
+</html>
